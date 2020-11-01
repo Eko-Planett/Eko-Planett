@@ -1,0 +1,25 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section {
+  background-color: white;
+  border: 3px solid #0174DF;
+  padding: 10px;
+}
+  
+a {
+  text-decoration: none;
+  color: #0040FF;
+}
+
+.logo {
+  float: right;
+}
