@@ -1,0 +1,8 @@
+<html>
+  <script src="javascript.js"></script>
+  <head></head>
+  <body onload="setup();">
+    <page-header></page-header>
+    <div class="section">
+    <h3> Jokes! </h3>
+    <h4> Here are some jokes about the enviroment that might lift your mood while still causing some awareness! </h4>
