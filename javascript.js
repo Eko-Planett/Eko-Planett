@@ -9,8 +9,7 @@ class PageHeader extends HTMLElement {
 
 class PageFooter extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = '<p class="white">This website uses cookies from Google to enable marketing services such as Google Analytics. Your data is completely anonymous.';
-  }
+    this.innerHTML = '<p class="white">This website uses cookies from Google to enable marketing services such as Google Analytics. Your data is completely anonymous.</p>
 }
 
 customElements.define('page-header', PageHeader);
