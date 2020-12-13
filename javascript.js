@@ -1,5 +1,6 @@
 // DO NOT EDIT THIS PLEASE
 var d = new Date();
+var bgImages = ["url(/images/0.webp)", "url(/images/1.webp)", "url(/images/2.webp)", "url(/images/3.webp)", "url(/images/4.webp)", "url(/images/5.webp)", "url(/images/6.webp)"];
 
 class PageHeader extends HTMLElement {
   connectedCallback() {
@@ -17,5 +18,9 @@ customElements.define('page-header', PageHeader);
 customElements.define('page-footer', PageFooter);
 
 function setup() {
-    document.getElementsByTagName("head")[0].innerHTML = '<meta name="description" content="Want to save the environment, but don’t know where to start amongst the thousands of websites with tips, videos, arts, crafts, and more? Eko Planett has the best content on the best ways to help the environment, all in one place, so start here! The world is counting on you."><link rel="icon" href="/images/favicon.ico" type="image/x-icon"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="https://www.googleoptimize.com/optimize.js?id=OPT-TNV37V3"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-144569588-1"></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "UA-144569588-1");</script><script async src="https://cse.google.com/cse.js?cx=c9e60bf9b9fec089e"></script><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/navbar.css"><link rel="stylesheet" href="/css/colours.css"><link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"><title> Eko Planett </title>';
+    var body = document.body;
+    var head = document.head;
+  
+    body.style.backgroundImage = bgImages[d.getDay()];
+    head.innerHTML = '<meta name="description" content="Want to save the environment, but don’t know where to start amongst the thousands of websites with tips, videos, arts, crafts, and more? Eko Planett has the best content on the best ways to help the environment, all in one place, so start here! The world is counting on you."><link rel="icon" href="/images/favicon.ico" type="image/x-icon"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="https://www.googleoptimize.com/optimize.js?id=OPT-TNV37V3"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-144569588-1"></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "UA-144569588-1");</script><script async src="https://cse.google.com/cse.js?cx=c9e60bf9b9fec089e"></script><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/navbar.css"><link rel="stylesheet" href="/css/colours.css"><link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"><title> Eko Planett </title>';
 }
