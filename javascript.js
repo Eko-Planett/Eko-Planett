@@ -3,7 +3,7 @@ var d = new Date();
 
 class PageHeader extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = '<div class="logo"><img src="/images/EkoPlanett.webp" alt="Eko Planett Logo" width="63" height="63" onerror="this.src = \'images/EkoPlanett.png\'"/><br></div><div class="navbar"><div class="dropdown"><button class="dropbtn">Menu</button><div class="dropdown-content"><a href="/">Home</a><a href="/tips">Tips</a><a href="/jokes">Jokes</a><a href="/arts">Arts and Crafts</a><a href="/quizzes">Quizzes</a></div></div></div><br><br><br>';
+    this.innerHTML = '<div class="logo"><img src="/images/EkoPlanett.webp" alt="Eko Planett Logo" width="63" height="63" onerror="this.src = \'/images/EkoPlanett.png\'"/><br></div><div class="navbar"><div class="dropdown"><button class="dropbtn">Menu</button><div class="dropdown-content"><a href="/">Home</a><a href="/tips">Tips</a><a href="/jokes">Jokes</a><a href="/arts">Arts and Crafts</a><a href="/quizzes">Quizzes</a></div></div></div><br><br><br>';
   }
 }
 
