@@ -4,16 +4,18 @@
   </head>
   <body onload="setup();">
     <page-header></page-header>
-    <div id="disqus_thread"></div>
-    <script>
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://eko-planett.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the comments.</noscript>
+    <div class="message">
+      <div id="disqus_thread"></div>
+      <script>
+          (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://eko-planett.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the comments.</noscript>
+    </div>
     <page-footer></page-footer>
   </body>
 </html>
